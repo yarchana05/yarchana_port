@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Kolker+Brush&family=Montserrat&family=Mouse+Memoirs&family=Poppins:ital,wght@0,200;0,300;0,400;1,100;1,200;1,300&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    top:0;
+    right: 0;
+}
+#first-page{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, rgb(18, 154, 203), rgb(201, 227, 245));
+}
+
+.navbar{
+    
+    height: 20%;
+    
+}
+#navbarNav{
+    justify-content: flex-end;
+}
+.container-fluid{
+    display: flex;
+    background-color: rgb(18, 154, 203);
+    position: fixed;
+    z-index: 1;
+}
+@font-face{
+    font-family: 'yarchana';
+    src:url('go3v2.ttf');
+
+}
+.container-fluid h2{
+    width: 25%;
+    text-align: center;
+    font-size: 40px;
+    font-family:'yarchana';
+
+}
+.container-fluid h2 a{
+    color:white;
+}
+
+/*intro*/
+.container{
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+
+}
+.container .row{
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+}
+.row h1{
+    
+    font-family:'Ubuntu', cursive;
+}
+.row p{
+    color:rgb(69, 64, 64);
+    
+}
+.row #para{
+    color:grey;
+    
+}
+img{
+    border-radius: 10% 40%;
+    border: 2px solid white;
+    
+}
+/*skill page*/
+#skill-page{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(to bottom right, rgb(201, 227, 245), rgb(18, 154, 203)) ;
+}
+
+.skills{
+    text-align: center;
+    padding-top: 1.5rem;
+    height:20vh;
+}
+#skill-page .container{
+    justify-content: space-around;
+    height:80vh;
+    align-items: center;
+}
+.demo1,.demo2{
+    width:50%;  
+    padding:3rem; 
+}
+.info{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    line-height: 2;
+}
+@font-face{
+    font-family: 'hello';
+    src:url('HIROMISAKE.ttf');
+
+}
+.skills h2{
+    font-family: 'hello';
+}
+
+.line{
+    height:5px;
+    width: 100%;
+    background-color:rgb(119, 192, 237);
+    position: relative;
+
+}
+.line::before{
+    height: 100%;
+    width: 80%;
+    background: rgb(3, 55, 76);
+    content: "";
+    left:0;
+    top:0;
+    position: absolute;
+
+}
+.html::before{
+    width:90%;
+}
+.css::before{
+    width:60%;
+}
+.js::before{
+    width:40%;
+}
+.php::before{
+    width:70%;
+}
+.mysql::before{
+    width:80%;
+}
+/*media query*/
+@media only screen and (max-width:600px) and (min-width:400px) {
+    .service_demo{
+        display: block;
+    }
+    .demo1,.demo2{
+        width:100%;
+        padding: 1rem;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:768px){
+    .demo1,.demo2{
+        width:100%;
+        padding: 1rem;
+    }
+}
+
+/*second-page*/
+#service-page{
+    height: 100vh;
+    width: 100%;
+    background-image:  linear-gradient(to bottom right, rgb(18, 154, 203), rgb(201, 227, 245));
+}
+.page2 .first{
+   height:20vh;
+   padding-top: 1.5rem; 
+}
+.page2 .container{
+    height:80vh;
+}
+
+.page2 .first p{
+    text-align: center;
+}
+.page2 .container .row .col-6 img{
+    height:50%;
+    width:50%;
+    transition-property: height,width;
+    transition-duration: 2s;
+}
+.page2 .container .row .col-6 img:hover{
+    width:100%;
+    height: 100%;
+}
+.page2 .first h2{
+    font-family: 'hello';
+}
+
+
+@media only screen and (max-width:600px) and (min-width:400px) 
+    {
+        .page2 .container .row .col-6 img{
+            height:100%;
+            width:100%;
+            transition-property: height,width;
+            transition-duration: 2s;
+        }
+        .page2 .container .row .col-6 img:hover{
+            width:150%;
+            height: 150%;
+        }
+        
+    }
+ /*contact-page*/   
+#contact-page{
+    height: 130vh;
+    width: 100%;
+    background-image:linear-gradient(to bottom right, rgb(201, 227, 245), rgb(18, 154, 203));
+}
+.contact{
+    text-align: center;
+    padding: 5% 10%;
+}
+.container .row .col-2 hr{
+    width:10rem;
+    
+}
+.container .row .col-9 form .name,.em,#pro,textarea{
+    width:18rem;
+}
+.contact h2{
+    font-family: 'hello';
+}
+
+.container .footer h4{
+    text-align: center;
+    padding: 5rem;
+    color:rgb(6, 5, 5);
+}
+
